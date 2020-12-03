@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         
         
-        let calendar = FMCalendarView(dateRange: -1...6, width: UIScreen.main.bounds.width, itemHeight: 59)
+        let calendar = FMCalendarView(dateRange: -1...13, width: UIScreen.main.bounds.width, itemHeight: 59)
         calendar.frame = CGRect(x: 0, y: 200, width: UIScreen.main.bounds.width, height: 400)
         self.view.addSubview(calendar)
     }

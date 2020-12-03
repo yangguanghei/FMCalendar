@@ -94,6 +94,10 @@ class FMCalendarData: NSObject {
                 currentMonth = currentMonth % 12
                 currentYear = year + i / 12 + 1
             }
+					if currentMonth == 0 {  // 12月的时候需要特殊处理下
+							currentMonth = 12
+							currentYear = year + i / 12
+					}
             let monthItem = self.getSection(year: currentYear, month: currentMonth, currentDay: i == 0 ? day : 0)
             monthes.append(monthItem)
         }
